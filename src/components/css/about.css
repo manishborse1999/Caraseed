@@ -1,0 +1,109 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: #3dd393;
+  background: -webkit-linear-gradient(90deg, #03ced3, #79d951);
+  background: linear-gradient(90deg, #03ced3, #79d951);
+  background: -moz-linear-gradient(90deg, #03ced3, #79d951);
+}
+.about > h2 {
+  text-align: center;
+  font-size: 40px;
+}
+.about__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about__content > img {
+  /* object-fit: contain; */
+  width: 500px;
+  padding-left: 50px;
+}
+.about__logo {
+  display: flex;
+  justify-content: center;
+}
+.about__logo > img {
+  object-fit: contain;
+  width: 300px;
+  height: 200px;
+}
+.about__description {
+  padding-left: 50px;
+  font-size: 20px;
+  line-height: 25px;
+  padding-right: 20px;
+  text-align: justify;
+}
+.about__description > p {
+  padding: 10px;
+  line-height: 30px;
+}
+
+.about__contentTwo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+}
+.about__contentRow {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about__contentTwo > h2 {
+  text-align: center;
+  font-size: 40px;
+  padding-bottom: 50px;
+}
+
+.about__address > h4 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.about__address > p {
+  padding-bottom: 40px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 20px;
+}
+.about__form {
+  padding-left: 100px;
+}
+@media screen and (max-width: 500px) {
+  .about__content {
+    flex-direction: column;
+  }
+  .about__logo > img {
+    object-fit: contain;
+    width: 250px;
+    padding-left: 0px;
+    height: 200px;
+  }
+  .about__description {
+    padding-left: 15px;
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 15px;
+    text-align: justify;
+  }
+  .about__contentRow {
+    flex-direction: column;
+  }
+  .about__form {
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+  }
+  .about__content > img {
+    object-fit: contain;
+    width: 350px;
+    height: 300px;
+    padding-left: 0px;
+  }
+}
